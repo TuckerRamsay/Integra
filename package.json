@@ -2,6 +2,10 @@
   "name": "integra",
   "version": "1.2.0",
   "main": "electron/main.js",
+  "scripts": {
+  "start": "electron .",
+  "dist": "electron-builder"
+},
   "build": {
     "productName": "Integra",
     "appId": "com.tuckerramsay.integra",
