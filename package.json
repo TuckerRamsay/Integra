@@ -1,0 +1,34 @@
+{
+  "name": "integra",
+  "version": "1.2.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "productName": "Integra",
+    "appId": "com.tuckerramsay.integra",
+    "win": {
+      "target": "nsis",
+      "icon": "logo/integra_logo.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "TuckerRamsay",
+      "repo": "integra"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.13.0"
+  }
+}
