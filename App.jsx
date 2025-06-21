@@ -1,1 +1,0 @@
-// App with Switch Profile button + profile selector integration
